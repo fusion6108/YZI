@@ -1,10 +1,3 @@
-^https:\/\/oneplay-api\.instadrum\.com\/drum\/(score|account|course\/user_behaviour|lesson\/add_process) url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/Xiaoyejiazigu.js
-
-^https:\/\/oneplay-api\.xiaoyezi\.com\/drum\/(score|account|course\/user_behaviour|lesson\/add_process) url script-response-body https://raw.githubusercontent.com/Yu9191/Rewrite/main/Xiaoyejiazigu.js
-
-
-hostname = oneplay-api.instadrum.com， oneplay-api.xiaoyezi.com
-
 var body = $response.body;
 var url = $request.url;
 
