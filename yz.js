@@ -27,10 +27,10 @@ try {
     } else if (url.includes("/drum/account")){
         let obj = JSON.parse(body);
         obj.data.subscribe = {
-            "status": 1,
+            "status": 0,
             "start_time": "0",
-            "end_time": "999",
-            "auto_renew": "1"
+            "end_time": "0",
+            "auto_renew": "0"
         };
         body = JSON.stringify(obj);
     } else if (url.includes("/drum/lesson/add_process")){
