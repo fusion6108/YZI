@@ -29,7 +29,7 @@ try {
         obj.data.subscribe = {
             "status": 1,
             "start_time": "0",
-            "end_time": "19999999999",
+            "end_time": "999",
             "auto_renew": "1"
         };
         body = JSON.stringify(obj);
