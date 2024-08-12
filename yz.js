@@ -9,7 +9,7 @@ time：2024-1-17
 
 [mitm]
 hostname = oneplay-api.instadrum.com， oneplay-api.xiaoyezi.com
-*/
+
 var body = $response.body;
 var url = $request.url;
 
@@ -23,7 +23,9 @@ if (url.indexOf("/drum/course/user_behaviour") != -1){
     body = body.replace(/"unlock_status":0/g, "\"unlock_status\":1");//是否解锁
     body = body.replace(/"process_rate":\d+/g, "\"process_rate\":100");//进度
 
-} else if (url.indexOf("/drum/account") != -1){
+} 
+*/
+else if (url.indexOf("/drum/account") != -1){
     let obj = JSON.parse(body);
     obj.data.subscribe = {
         "status": 1,
