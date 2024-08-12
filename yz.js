@@ -28,7 +28,7 @@ try {
         let obj = JSON.parse(body);
         obj.data.subscribe = {
             "status": 1,
-            "start_time": "19999999999",
+            "start_time": "0",
             "end_time": "19999999999",
             "auto_renew": "1"
         };
