@@ -27,7 +27,7 @@ try {
     } else if (url.includes("/drum/account")){
         let obj = JSON.parse(body);
         obj.data.subscribe = {
-            "status": 1,
+            "status": "1",
             "start_time": "19999999999",
             "end_time": "19999999999",
             "auto_renew": "1"
